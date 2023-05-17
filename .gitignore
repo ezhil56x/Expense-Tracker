@@ -1,18 +1,11 @@
-# Logs
-logs
-*.log
-
 # Dependency directories
-node_modules/
-.pnp/
+/node_modules
+/.pnp
 .pnp.js
 
-# Output directory
-build/
-
-# Cache directories
-.cache/
-dist/
+# Built output
+/build
+/dist
 
 # Environment files
 .env.local
@@ -20,50 +13,32 @@ dist/
 .env.test.local
 .env.production.local
 
+# Cache and logs
+/.cache
+/logs
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+
 # Editor directories and files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
-
-# Mac specific files
-.DS_Store
-
-# Jest coverage
-coverage/
-
-# Dependency files
-package-lock.json
-yarn.lock
-
-# Production build
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE files
-/.history
-*.sublime-workspace
-*.sublime-project
-
-# Compiled binary files
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Miscellaneous
-*.zip
-*.rar
-*.gz
-*.tar
-*.xpi
-*.7z
-*.pdf
-*.tgz
+/.idea
+/.vscode
 *.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Compiled JSX and CSS files (optional)
+*.jsx
+*.js
+*.js.map
+*.css
+*.css.map
+
+# Other build files (optional)
+*.html
+*.png
+*.jpg
+*.gif
